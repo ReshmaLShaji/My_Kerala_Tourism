@@ -1,0 +1,161 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+#navbar{
+    background-color: beige;
+}
+#head{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: oblique;
+    color: black;
+    text-shadow: 0px 2px 2px black;
+    margin-bottom: 5px;
+}
+#head span1{
+    color:rgb(2, 97, 2);
+}
+#head span2{
+    color:forestgreen
+}
+#navbarScroll{
+    font-style: italic;
+    font-weight:400;
+    font-size: 20px;
+}
+img.slide{
+    height: 600px;
+}
+.para{
+    font-style: italic;
+    color:rgb(248, 248, 249);
+    font-weight: 500;
+    font-size: 200px;
+}
+.logo{
+    font-style: italic;
+    color:rgb(254, 254, 254);
+    font-family: cursive;
+    font-weight: 700;
+}
+.para{
+    font-family: monospace;
+    font-weight: 400;
+}
+.card-title{
+    font-family:cursive;
+    margin-top: 10px;
+    font-weight: 700;
+    text-decoration: solid black;
+    font-size: 30px;
+}
+.heading{
+    font-size: 25px;
+}
+.row img{
+  border-radius: 20px; 
+  position: relative; 
+}
+
+.card-img-top:hover{
+      transform:scale(1.1);
+      /* width: ;
+      height: ; */
+      border-radius: 15px;
+ }
+ .logic {
+      
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 600;
+ }
+ .carousel-item {
+    height:600px
+ } 
+ .img.d-block {
+    height: 300px;
+}
+.img .image {
+    height: 600px;
+}
+.rrr{
+    text-decoration: solid;
+    font-family: cursive;
+    font-weight: 600;
+    color: white;
+    
+}
+ .title{
+    font-weight: 600;
+}
+.heading{
+    font-family: cursive;
+}
+.dropdown-item{
+    font-family: cursive;
+}
+.cardbody{
+    background-color: beige;
+    width: 20px;
+} 
+
+/* .r{
+    background-image:url(back.jpg) ;
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: px;
+margin-bottom: -160px;
+}  */
+
+/* footer */
+
+ .container-1{
+    max-width: 1170px;
+    margin: auto;
+  }
+  .row-1{
+    display: flex;
+    flex-wrap: wrap;
+  } 
+  .footer-1{
+    background-color: rgb(179, 253, 197);
+    padding: 70px 0;
+  }
+  .footer-col-1{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col-1 h4{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;    
+  }
+  .footer-col-1 h4::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(2, 46, 22);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col-1 ul li a{
+    color: darkblue;
+    text-decoration: none;
+  }
+  .footer-col-1 ul li a:hover{
+      color: black;
+      text-decoration: none;
+  }
+  /* footer  */
+
+
+  

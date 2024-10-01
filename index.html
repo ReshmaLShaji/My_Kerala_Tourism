@@ -1,0 +1,131 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+         
+.form{
+    position: absolute;
+    max-width: 340px;
+    width: 60%;
+    top: 432px;
+    left: 630px;
+    transform:translate(-50%, 
+    -50%);
+    z-index: 101;
+    background: #0000005c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+p{
+    color: black;
+}
+
+body{
+   background-image: url(/Images/login.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    
+            <form action="Tourism.html" onsubmit="return validate()">
+                <div class="form">
+                <fieldset>
+                  <legend style="color: rgb(207, 248, 22); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: 900;" >Login</legend>
+                  <div class="mb-3">
+                    <label ></label>
+                    <input type="email" id="disabledTextInput" class="form-control" placeholder="enter email id required">
+                  </div>
+                  <div class="mb-3">
+                    <label ></label>
+                    <input type="password" id="disabledTextInput" class="form-control" placeholder="enter your password required">
+                  </div>
+                  <p style="color: rgb(0, 0, 0); text-shadow:0 0 10px white; font-weight: 700;">Don't have an account?
+                    <a class="sign" href="signup.html">sign up</a> here
+                </p>
+                  <button type="submit" class="btn btn-success">Login</button>
+                </fieldset>
+            </div>
+              </form>
+            <script src="validation.js"></script>
+        form -->
+<!-- </body>
+</html>  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .form {
+            position: absolute;
+            max-width: 340px;
+            width: 60%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 101;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            background-image: url(/Images/login.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        legend {
+            color: rgb(207, 248, 22);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+        }
+        p {
+            color: white;
+            text-shadow: 0 0 10px white;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <form action="Tourism.html" onsubmit="return validate()">
+        <div class="form">
+            <fieldset>
+                <legend>Login</legend>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <p>Don't have an account? <a class="sign" href="signup.html">Sign Up</a> here</p>
+                <button type="submit" class="btn btn-success">Login</button>
+            </fieldset>
+        </div>
+    </form>
+    <script src="validation.js"></script>
+</body>
+</html>
