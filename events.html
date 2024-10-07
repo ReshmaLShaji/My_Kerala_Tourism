@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,9 +24,7 @@
     color: black;
     text-shadow: 0px 2px 2px black;
     margin-bottom: 5px;
-
 }
-
 
 #navbarSupportedContent{
   margin-left: 150px;
@@ -40,42 +39,39 @@
 }
 #head span2{
     color:forestgreen
-   
 }
 .heading{
  color: black;
  font-weight: 600;
 }
-        .festival{
-          position: relative;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    border-radius: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-left: 54px;
-   
+.festival{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 54px;
 }
-      
-        .card-img-top{
-        height: 200px;       
-     }
-     .text-center{
-      font-family: 'Times New Roman', Times, serif;
-     }
-     .image{
-      padding-left: 25px;
-      background-image:url(fest.jpg);
-      background-size: cover;
-       background-repeat: no-repeat;
-     }
-     
+.card-img-top{
+    height: 200px;       
+}
+.text-center{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-style: ;
+}
+.image{
+  padding-left: 25px;
+  background-image:url(fest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
     </style>
 </head>
 <body>  
    <!-- Navbar starting -->
-  
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="Tourism.html" id="head"><span1>Visit</span1> <span2>Kerala</span2></a>
@@ -85,21 +81,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="where.html"><p  class="heading" >Where to Go</p></a>
+          <a class="nav-link active" aria-current="page" href="where.html"><p class="heading">Where to Go</p></a>
         </li>
-        <br>
         <li class="nav-item">
           <a class="nav-link" href="events.html"><p class="heading">Events & Festivals</p></a>
         </li>
-        <br>
-        <!-- <li class="nav-item"></li>
-          <a class="nav-link" href="blog.html"><p class="heading">Blog</p></a>
-        </li> -->
-        <!-- <br> -->
-        <li class="nav-item"></li>
-          <a class="nav-link" href="about.html" ><p class="heading">About Kerala</p></a>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><p class="heading">About Kerala</p></a>
         </li>
-      
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -109,196 +98,150 @@
   </div>
 </nav>
    <!-- Navbar ending  -->
-<div class="image" style="background-image: url(Images/kera.jpg);">
-  <h1 class="text-center" style="padding-top: 30px; "><b>Festivals of Kerala </b></h1>
-    <p class="text-center1" style="padding-top: 30px;" ><h5>The diverse south Indian state of Kerala can also be called a 'land of festivals', because of long list of fairs and festivals that are celebrated here all round the year. However, the dates of the festivals change every year as per the Malayalam calendar. Every festival has its own importance and is celebrated with great zeal by the people of all the castes and religions. During the celebrations, the classical music, dance and other traditional rituals comes alive. People clean and decorate their homes, exchange gifts, wear new clothes, relish elaborate meals along with the loved ones, offer prayers to their deities and partake in processions, which are great shows of rhythm and culture. Elephants are also an important part of Kerala's festivities. Following are the main festivals in Kerala:</h5></p>
 
-   <div class="festival">
-    <div class="col-sm-4">
-        <div class="card1">
-  <div class="card" style="
-    width: 25rem;">
-    <img src="Images/onam.jpg"class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Onam Festival</h3>
-      <p class="card-text">The yearly harvest festival, Onam, is a 10-day event that starts on Attam and is concluded on Thiruvonam. Kerala's most important festival is rejoiced to welcome the spirit of King Mahabali. The legendary ruler is said to come on Earth, once in a year during Onam. He is welcomed in every house, with lights, rangoli of flowers and colors, Sadya- a special feast, snake boat races, folk performances and classical programs. For the promotion of Onam and the culture of the state, Tourism Week is celebrated mainly in Trivandrum.</p>
+<div class="image" style="background-image: url(Images/kera.jpg);">
+  <h1 class="text-center" style="padding-top: 30px;"><b>Festivals of Kerala </b></h1>
+  <h5 class="text-center" style="padding-top: 30px;">The diverse south Indian state of Kerala can also be called a 'land of festivals', because of long list of fairs and festivals that are celebrated here all round the year. However, the dates of the festivals change every year as per the Malayalam calendar. Every festival has its own importance and is celebrated with great zeal by the people of all the castes and religions. During the celebrations, the classical music, dance and other traditional rituals comes alive. People clean and decorate their homes, exchange gifts, wear new clothes, relish elaborate meals along with the loved ones, offer prayers to their deities and partake in processions, which are great shows of rhythm and culture. Elephants are also an important part of Kerala's festivities. Following are the main festivals in Kerala:</h5>
+
+  <!-- Responsive Festival Cards -->
+  <div class="container">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/onam.jpg" class="card-img-top" alt="Onam Festival">
+          <div class="card-body">
+            <h3>Onam Festival</h3>
+            <p class="card-text">The yearly harvest festival, Onam, is a 10-day event that starts on Attam and is concluded on Thiruvonam. Kerala's most important festival is rejoiced to welcome the spirit of King Mahabali.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/navrathri.jpg" class="card-img-top" alt="Navarathri Festival">
+          <div class="card-body">
+            <h3>Navarathri Festival</h3>
+            <p class="card-text">Navarathri is one of the most prominent Hindu festivals celebrated in September-October. During the festival, the 9 incarnations of Goddess Durga are worshipped.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/pooram.jpeg" class="card-img-top" alt="Thrissur Pooram Festival">
+          <div class="card-body">
+            <h3>Thrissur Pooram Festival</h3>
+            <p class="card-text">Celebrated in April-May, Thrissur Pooram is a major festival held in Thrissur. The highlight is the procession that includes 101 bedecked elephants.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/pongala.jpg" class="card-img-top" alt="Pongala Festival">
+          <div class="card-body">
+            <h3>Pongala Festival</h3>
+            <p class="card-text">Pongala is organized at Attukal Bhagavathy temple, where female devotees prepare Pongala, a sweet porridge, in clay pots over an open fire as an offering.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/village.jpg" class="card-img-top" alt="Kerala Village Fair">
+          <div class="card-body">
+            <h3>Kerala Village Fair</h3>
+            <p class="card-text">The Kerala Village Fair, held in January, recreates the traditional village life of Kerala, featuring handlooms, handicrafts, and cultural performances.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/aluva.jpg" class="card-img-top" alt="Aluva Festival">
+          <div class="card-body">
+            <h3>Aluva Festival</h3>
+            <p class="card-text">Celebrated in February-March, Aluva Sivarathri is held on the banks of the Periyar River, remembering the event when Lord Shiva consumed poison to save the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <!-- Card 7 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/makaravilakku.jpeg" class="card-img-top" alt="Makaravilakku Festival">
+          <div class="card-body">
+            <h3>Makaravilakku Festival</h3>
+            <p class="card-text">Makaravilakku, held at Sabarimala in January, is attended by thousands of devotees to offer prayers to Lord Ayyappa.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/eastr.jpg" class="card-img-top" alt="Easter Festival">
+          <div class="card-body">
+            <h3>Easter Festival</h3>
+            <p class="card-text">Easter is celebrated in April to commemorate the resurrection of Christ, with prayers and festivities in Christian communities across Kerala.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <img src="Images/vishu.jpg" class="card-img-top" alt="Vishu Festival">
+          <div class="card-body">
+            <h3>Vishu Festival</h3>
+            <p class="card-text">Vishu marks the astronomical New Year for Hindus in Kerala. Kani Kanal, a ceremonial viewing of auspicious objects, is performed for prosperity.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-<div class="col-sm-4">
-    <div class="card2">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/navrathri.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Navarathri Festival</h3>
-      <p class="card-text">Celebrated in the month of Kanni (September-October), Navarathri is one of the most prominent Hindu festivals. During the festival, the 9 incarnations of Goddess Durga are worshipped. Puja Veppu ceremony is performed on the day of Durgashtami, where books are worshipped. On the day of Mahanavami, Goddess Saraswati is worshipped. On the day of Vijaya Dashami, it is break-up time for the Pooja and work and study are again restarted.</p>
-    </div>
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card3">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/pooram.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Thrissur Pooram Festival</h3>
-      <p class="card-text">Celebrated in April-May, Thrissur Pooram is a major festival held in Thrissur. The rulers of erstwhile Kochi state, Sakthan Thampuran founded this festival. The highlight of this festival is its procession that consists of 101 bedecked elephants, which first assemble for the festivals in the Vadakumnatha temple. Along with the group of elephants, the procession includes spectacular fireworks and the Panchavadyam, 5 musical instruments, when played together, create soothing music.</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-sm-4">
-    <div class="card4">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/pongala.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Pongala Festival</h3>
-      <p class="card-text">A 10- day festival, Pongala is organized at Attukal Bhagavathy temple, around 2 km from Trivandrum. The festival is attended by thousands of female devotees but men are not allowed in the vicinity of the temple. On this day, Pongala, a kind of sweet porridge, is offered to the goddess. This dish is prepared in a clay pot on open fire. </p>
-    </div> 
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card5">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/village.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Kerala Village Fair</h3>
-      <p class="card-text">Celebrated in the month of January, the Kerala Village Fair is organized at the Kovalam beach. During this 10-day festival, a scene of a village is recreated. Nalukettu, a recreation of traditional house of Kerala is the main attraction. The fair includes several stalls, selling interesting stuff like coconut shell items, bell metal mirrors, woven clothes, handicrafts, spinning wheels and handloom for making Khadi and more. In the evening, there are dance, music and martial art performances.</p>
-    </div>
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card6">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/aluva.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Aluva Sivarathri Festival</h3>
-      <p class="card-text">Celebrated in February-March, Aluva Sivarathri is held on the banks of Periyar River in Aluva. This day is celebrated to remember the occasion when Lord Shiva had consumed poison to save the destruction of the world. On the day of the festival, the devotees stay awake for the night and read Holy Scriptures, puranas etc. After returning to their homes during dawn, they perform Bali, a ritual. Several cultural programs and a trade fair are also a part of this festival.</p>
-    </div>  
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card7">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/makaravilakku.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Makaravillakku Festival</h3>
-      <p class="card-text">Celebreated in January, Makaravillakku is held at Sabarimala in Pathanamthitta. This festival is attended by thousands of devotees from all over South India. Lord Ayyappa, also called Dharma Sastha, the worshipped deity in Sabarimala is offered prayers during the festivals. He is seen as a representation of unison between the Vaishnavites and the Saivites.</p>
-    </div> 
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card8">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/eastr.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Easter Festival</h3>
-      <p class="card-text">Celebrated in the month of April by Christians all around Kerala, arrives soon after the Good Friday. The day is the celebration of the rebirth of Christ, the victory of good over evil. This festival is celebrated with a lot faith and fun and the Christians offer special prayer services in the church. 40 days before the Holy week of Easter, fasting and prayers are organized.</p>
-    </div> 
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card9">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/vishu.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Vishu Festival</h3>
-      <p class="card-text">Celebrated in April-May, Vishu festival is celebration of the astronomical New Year day by the Hindus in Kerala. There is a common belief that the first object seen on this day has a great influence on the fortunes of the subsequent year. The important ceremony of Kani Kanal include things like new white cloth, gold ornaments, cadjan leaf book, flowers of the Konna tree, some rice, halved coconut, halved jack fruit, yellow cucumber and 2 standing lighted oil lamps.</p>
-    </div> 
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card10">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/thiruvathira.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Thiruvathira Festival</h3>
-      <p class="card-text">Celebrated in the Dhanu month (December-January), at Thiruvathira, the Thiruvathira festival is women's festivals. On the day of the festival, people visit temples of Lord Shiva. There are several legends behind the origin of the festival. The main aim of this festival is promotion of happiness and harmony. The dance form of Thiruvathirkkali is also related to this festival.</p>
-    </div> 
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card11">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/nisha.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Nishagandhi Dance and Music Festival</h3>
-      <p class="card-text">Organized at Nishagandhi Open Air Theatre, Kanakkunu Palace grounds in Trivandrum, Nishagandhi Dance and Music Festival is a celebration of Indian classical dance and music. There are various kinds of performances during the festival including a Jugalbandi, Kathak, Bharatnatyam, Kuchipudim Odissi, Manipuri, Mohiniattam, and more.</p>
-    </div>
-  </div>
-</div>
-</div>
-  <div class="col-sm-4">
-    <div class="card12">
-  <div class="card" style="width: 25rem;">
-    <img src="Images/chandana.jpeg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3>Chandanakudam Mahotsavam</h3>
-      <p class="card-text">Chandanakudam Mahotsavam is a colorful Muslim festival, organized in the remembrance of Bee Umma, a saintly lady whose tomb is placed in Beemapally, near Trivandrum. On this day, the devotees bring money in earthen pots that are decorated with flowers, sandalwood paste and incense sticks, in the form of an offering.</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
+  
+
 <footer>
   <div class="footer-1">
-  <div class="container-1">
-  <div class="row-1">
-  
-  <!-- Visit Kerala Column -->
-  <div class="footer-col-1">
-    <h4>Explore</h4>
-    <ul>
-      <li><a href="Tourism.html">Visit Kerala</a></li>
-      <br>
-      <li><a href="where.html">Where to Go</a></li>
-      <br>
-      <li><a href="events.html">Events & Festivals</a></li>
-      <br>
-      <li><a href="about.html">About Kerala</a></li>
-    </ul>
+    <div class="container-1">
+      <div class="row-1">
+        <div class="footer-col-1">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="Tourism.html">Visit Kerala</a></li>
+            <li><a href="where.html">Where to Go</a></li>
+            <li><a href="events.html">Events & Festivals</a></li>
+            <li><a href="about.html">About Kerala</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-1">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="tel:+1234567890">Phone: +1234567890</a></li>
+            <li><a href="mailto:info@example.com">Email: reshma.l.shaji1@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-1">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#" class="fa fa-facebook"> Facebook</a></li>
+            <li><a href="#" class="fa fa-instagram"> Instagram</a></li>
+            <li><a href="#" class="fa fa-youtube"> YouTube</a></li>
+            <li><a href="#" class="fa fa-google"> LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  
-  <!-- Contact Us Column -->
-  
-  <div class="footer-col-1">
-    <h4>Contact Us</h4>
-    <ul>
-      <li><a href="tel:+1234567890">Phone: +1234567890</a></li>
-      <li><a href="mailto:info@example.com">Email: reshma.l.shaji1@gmail.com</a></li>
-    </ul>
-  </div>
-  
-  <!-- Follow Us Column -->
-  <div class="footer-col-1">
-    <h4>Follow Us</h4>
-    <ul>
-      <li><a href="#" class="fa fa-facebook"> Facebook</a></li>
-      <li><a href="" class="fa fa-instagram"> Instagram</a></li>
-      <li><a href="#" class="fa fa-youtube"> YouTube</a></li>
-      <li><a href="#" class="fa fa-google"> LinkedIn</a></li>
-    </ul>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </footer>
-  
-  </body>
-  </html> 
-  
+</footer>
+
+</body>
+</html>
+

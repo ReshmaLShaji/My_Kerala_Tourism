@@ -43,59 +43,93 @@
       .card-col{
         position: relative;
         display: flex;
-        top: 50px;
-    max-width: 1280px; 
-     overflow: hidden;
-     margin-left: 120px;
-     
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
       }
+      .card {
+        width: 20rem;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+      }
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card-body {
+        position: absolute;
+        /* bottom: 0; */
+        background-color: rgba(0, 0, 0, 0.6); /* Transparent effect */
+        color: white;
+        width: 100%;
+        /* padding: 20px; */
+        text-align: center;
+        transform: translateY(100%);
+        transition: transform 0.4s ease-in-out;
+      }
+      .card:hover .card-body {
+        transform: translateY(0); /* Slide up effect on hover */
+      }
+      .card h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .card p {
+        font-size: 1rem;
+      }
+      .btn-success {
+        margin-top: 10px;
+      }
+
      
-      /* footer */
-
+ /* Footer Styles */
  .container-1{
-    max-width: 1170px;
-    margin: auto;
-  }
-  .row-1{
-    display: flex;
-    flex-wrap: wrap;
-  } 
-  .footer-1{
-    background-color: rgb(179, 253, 197);
-    padding: 70px 0;
-  }
-  .footer-col-1{
-    width: 25%;
-    padding: 0 15px;
-  }
-  .footer-col-1 h4{
-    font-size: 25px;
-    color: black;
-    margin-bottom: 30px;
-    font-weight: 600;
-    position: relative;    
-  }
-  .footer-col-1 h4::before{
-    content:'';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: rgb(2, 46, 22);
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-  }
-  .footer-col-1 ul li a{
-    color: darkblue;
-    text-decoration: none;
-  }
-  .footer-col-1 ul li a:hover{
-      color: black;
-      text-decoration: none;
-  }
-  /* footer  */
+        /* max-width: 1170px; */
+        margin: auto;
+        width: 100%;
 
+      }
+      .row-1{
+        display: flex;
+        flex-wrap: wrap;
+      } 
+      .footer-1{
+        background-color: rgb(179, 253, 197);
+        padding: 70px 0;
+      }
+      .footer-col-1{
+        width: 25%;
+        padding: 0 15px;
+      }
+      .footer-col-1 h4{
+        font-size: 25px;
+        color: black;
+        margin-bottom: 30px;
+        font-weight: 600;
+        position: relative;    
+      }
+      .footer-col-1 h4::before{
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: rgb(2, 46, 22);
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+      }
+      .footer-col-1 ul li a{
+        color: darkblue;
+        text-decoration: none;
+      }
+      .footer-col-1 ul li a:hover{
+        color: black;
+        text-decoration: none;
+      }
 
+  
     </style>
    
 </head>
@@ -180,27 +214,27 @@
    <!-- carousal ending -->
 
     <!-- card1 starting -->
-      <div class="card-col">
-    <div class="card" style="width: 20rem;">
-      <img src="Images/kochi.jpg" height="500vh" width="320px" alt="kochi">
-       <div class="card-body">
-        <h1>Kochi</h1>
-        <p>The queen of Arabian Sea.
-          Kochi spread over a series of islands </p>
+    
+    <div class="card-col">
+      <div class="card">
+        <img src="Images/kochi.jpg" alt="kochi">
+        <div class="card-body">
+          <h1>Kochi</h1>
+          <p>The queen of Arabian Sea. Kochi spread over a series of islands.</p>
           <a href="kochi1.html" class="btn btn-success">Know more</a>
         </div>
-          </div>
-      
-       <div class="card" style="width: 20rem;">
-        <img src="Images/home card/kozhikode.jpg" height="500vh" width="320px" alt="kozhikode">
+      </div>
+  
+      <div class="card">
+        <img src="Images/home card/kozhikode.jpg" alt="kozhikode">
         <div class="card-body">
-        <h1>Kozhikode</h1>
-        <p>Culutre and food hub of Kerala </p>
-        <a href="kozhikode.html" class="btn btn-success">Know more</a>
+          <h1>Kozhikode</h1>
+          <p>Culture and food hub of Kerala.</p>
+          <a href="kozhikode.html" class="btn btn-success">Know more</a>
+        </div>
       </div>
-      </div>
-
-      <div class="card" style="width: 20rem;">
+       
+      <div class="card" >
         <img src="Images/home card/wayanad.jpg" height="500vh" width="320px" alt="kozhikode">
         <div class="card-body">
         <h1>Wayanad</h1>
@@ -209,7 +243,7 @@
       </div>
       </div>
    
-      <div class="card" style="width: 20rem;">
+      <div class="card">
         <img src="Images/home card/munnar.jpg" height="500vh" width="320px" alt="kozhikode">
         <div class="card-body">
         <h1>Munnar</h1>
@@ -218,133 +252,133 @@
       </div>
       
     </div>
-  </div>
+
     <div class="card-col">
-      <div class="card" style="width: 20rem;">
-        <img src="Images/home card/alapuzha.jpg" height="500vh" width="320px" alt="kochi">
+      <div class="card">
+        <img src="Images/home card/alapuzha.jpg" alt="">
         <div class="card-body">
           <h1>Alapuzha</h1>
-          <p>The Alleppy backwaters in Kerala is a diving experience as the scenic beauty of nature makes it a must visit during monsoon </p>
+          <p>The Alleppy backwaters in Kerala is a diving experience as the scenic beauty of nature makes it a must visit during monsoon</p>
           <a href="alappuzha.html" class="btn btn-success">Know more</a>
-            </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="Images/home card/kovalam.jpg" alt="kozhikode">
+        <div class="card-body">
+          <h1>Kovalam</h1>
+          <p>Kovalam is famous for its beaches, among the most pristine in India </p>
+          <a href="kovalam1.html" class="btn btn-success">Know more</a>
+        </div>
+      </div>
+       
+      <div class="card" >
+        <img src="Images/home card/athirapally.jpg" height="500vh" width="320px" alt="kozhikode">
+        <div class="card-body">
+        <h1>Athirappally</h1>
+        <p>From the falls the monsoon. Called as "Niagra of India  </p>
+        <a href="athirapalli.html" class="btn btn-success">Know more</a> </p>
+      </div>
+      </div>
+   
+      <div class="card">
+        <img src="Images/home card/palakkad.jpg" height="500vh" width="320px" alt="kozhikode">
+        <div class="card-body">
+        <h1>Palakkad</h1>
+        <p> The granary of Kerala. Palakkad is the most beautiful and best place in Kerala</p>
+        <a href="palakkad.html" class="btn btn-success">Know more</a>
+      </div>
+      
+    </div>
+    <div class="card-col">
+      <div class="card">
+        <img src="Images/home card/thekkady.jpg" alt="">
+        <div class="card-body">
+          <h1>Thekkady</h1>
+          <p>Thekkady is an important tourist attraction in the Kerala.Take a trip into the lap of nature.</p>
+          <a href="thekkady.html" class="btn btn-success">Know more</a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="Images/home card/vagamon.jpg" alt="kozhikode">
+        <div class="card-body">
+          <h1>Vagamon</h1>
+          <p>When you feel like exploring more of Kerala, think of making a trip to Vagamon. </p>
+          <a href="vagamon.html" class="btn btn-success">Know more</a>
+        </div>
+      </div>
+       
+      <div class="card" >
+        <img src="Images/home card/nilambur.jpg" alt="kozhikode">
+        <div class="card-body">
+        <h1>Nilambur</h1>
+        <p>Nilambur is living green gem </p>
+        <a href="nilambur.html" class="btn btn-success">Know more</a> </p>
+      </div>
+      </div>
+   
+      <div class="card">
+        <img src="Images/home card/bekal fort.jpg"  alt="kozhikode">
+        <div class="card-body">
+        <h1>Bekal Fort</h1>
+        <p>It is the largest fort in Kerala, spreading over acres </p>
+        <a href="bekal fort.html" class="btn btn-success">Know more</a>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-1">
+      <div class="container-1">
+        <div class="row-1">
+          
+          <!-- Visit Kerala Column -->
+          <div class="footer-col-1">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="Tourism.html">Visit Kerala</a></li>
+              <br>
+              <li><a href="where.html">Where to Go</a></li>
+              <br>
+              <li><a href="events.html">Events & Festivals</a></li>
+              <br>
+              <li><a href="about.html">About Kerala</a></li>
+            </ul>
           </div>
-            <div class="card" style="width: 20rem;">
-              <img src="Images/home card/kovalam.jpg" height="500vh" width="320px" alt="kochi">
-              <div class="card-body">
-               <div>
-                <h1>Kovalam</h1>
-                <p>Kovalam is famous for its beaches, among the most pristine in India </p>
-                  <a href="kovalam1.html" class="btn btn-success">Know more</a>
-                </div>
-                  </div>
-                </div>
-                  <div class="card" style="width: 20rem;">
-                    <img src="Images/home card/athirapally.jpg" height="500vh" width="320px" alt="kochi">
-                    <div class="card-body">
-                     <div>
-                      <h1>Athirappally</h1>
-                      <p> From the falls the monsoon. Called as "Niagra of India </p>
-                        <a href="athirapalli.html" class="btn btn-success">Know more</a>
-                      </div>
-                        </div>
-                      </div>
-                        <div class="card" style="width: 20rem;">
-                          <img src="Images/home card/palakkad.jpg" height="500vh" width="320px" alt="kochi">
-                          <div class="card-body">
-                           <div>
-                            <h1>Palakkad</h1>
-                            <p>The granary of Kerala. Palakkad is the most beautiful and best place in Kerala</p>
-                              <a href="palakkad.html" class="btn btn-success">Know more</a>
-                            </div>
-                              </div>
-                            </div>
-                          </div>
+          
+          <!-- Contact Us Column -->
+          <div class="footer-col-1">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="tel:+1234567890">Phone: +1234567890</a></li>
+              <li><a href="mailto:info@example.com">Email: reshma.l.shaji1@gmail.com</a></li>
+            </ul>
+          </div>
+  
+          <!-- Follow Us Column -->
+          <div class="footer-col-1">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#" class="fa fa-facebook"> Facebook</a></li>
+              <li><a href="" class="fa fa-instagram"> Instagram</a></li>
+              <li><a href="#" class="fa fa-youtube"> YouTube</a></li>
+              <li><a href="#" class="fa fa-google"> LinkedIn</a></li>
+            </ul>
+          </div>
+          
         
-                          <div class="card-col">
-                            <div class="card" style="width: 20rem;">
-                              <img src="Images/home card/thekkady.jpg" height="500vh" width="320px" alt="kochi">
-                              <div class="card-body">
-                               <div>
-                                <h1>Thekkady</h1>
-                                <p>Thekkady is an important tourist attraction in the Kerala.Take a trip into the lap of nature. </p>
-                                <a href="thekkady.html" class="btn btn-success">Know more</a>
-                                </div>
-                                  </div>
-                                </div>
-                                  <div class="card" style="width: 20rem;">
-                                    <img src="Images/home card/vagamon.jpg" height="500vh" width="320px" alt="kochi">
-                                    <div class="card-body">
-                                     <div>
-                                        <h1>Vagamon</h1>
-                                        <p>When you feel like exploring more of Kerala, think of making a trip to Vagamon.</p>
-                                         <a href="vagamon.html" class="btn btn-success">Know more</a>
-                                      </div>
-                                        </div>
-                                      </div>
-                                        <div class="card" style="width: 20rem;">
-                                          <img src="Images/home card/nilambur.jpg" height="500vh" width="320px" alt="kochi">
-                                          <div class="card-body">
-                                           <div>
-                                            <h1>Nilambur</h1>
-                                            <p>Nilambur is living green gem </p>                                    
-                                              <a href="nilambur.html" class="btn btn-success">Know more</a>
-                                            </div>
-                                              </div>
-                                            </div>
-                                              <div class="card" style="width: 20rem;">
-                                                <img src="Images/home card/bekal fort.jpg" height="500vh" width="320px" alt="kochi">
-                                                <div class="card-body">
-                                                 <div> 
-                                                    <h1>Bekal Fort</h1>
-                                                    <p>It is the largest fort in Kerala, spreading over acres </p>
-                                                    <a href="bekal fort.html" class="btn btn-success">Know more</a>
-                                                  </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <footer>
-                                                  <div class="footer-1">
-                                                    <div class="container-1">
-                                                      <div class="row-1">
-                                                        
-                                                        <!-- Visit Kerala Column -->
-                                                        <div class="footer-col-1">
-                                                          <h4>Explore</h4>
-                                                          <ul>
-                                                            <li><a href="Tourism.html">Visit Kerala</a></li>
-                                                            <li><a href="where.html">Where to Go</a></li>
-                                                            <li><a href="events.html">Events & Festivals</a></li>
-                                                            <li><a href="about.html">About Kerala</a></li>
-                                                          </ul>
-                                                        </div>
-                                                        
-                                                        <!-- Contact Us Column -->
-                                                        <div class="footer-col-1">
-                                                          <h4>Contact Us</h4>
-                                                          <ul>
-                                                            <li><a href="tel:+1234567890">Phone: +1234567890</a></li>
-                                                            <li><a href="mailto:info@example.com">Email: reshma.l.shaji1@gmail.com</a></li>
-                                                          </ul>
-                                                        </div>
-                                                
-                                                        <!-- Follow Us Column -->
-                                                        <div class="footer-col-1">
-                                                          <h4>Follow Us</h4>
-                                                          <ul>
-                                                            <li><a href="#" class="fa fa-facebook"> Facebook</a></li>
-                                                            <li><a href="" class="fa fa-instagram"> Instagram</a></li>
-                                                            <li><a href="#" class="fa fa-youtube"> YouTube</a></li>
-                                                            <li><a href="#" class="fa fa-google"> LinkedIn</a></li>
-                                                          </ul>
-                                                        </div>
-                                                        
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  
-                                                  <!-- Font Awesome Icons -->
-                                                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                                                </footer>
-                                                
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </div>
+</div>
+</div>
+  </footer>
+  
+  
+  
 </body>
 </html>
