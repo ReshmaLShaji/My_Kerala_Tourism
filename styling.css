@@ -112,50 +112,72 @@ margin-top: px;
 margin-bottom: -160px;
 }  */
 
-/* footer */
 
- .container-1{
-    max-width: 1170px;
-    margin: auto;
-  }
-  .row-1{
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.footer-container {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-  } 
-  .footer-1{
-    background-color: rgb(179, 253, 197);
-    padding: 70px 0;
-  }
-  .footer-col-1{
-    width: 25%;
-    padding: 0 15px;
-  }
-  .footer-col-1 h4{
-    font-size: 25px;
-    color: black;
-    margin-bottom: 30px;
-    font-weight: 600;
-    position: relative;    
-  }
-  .footer-col-1 h4::before{
-    content:'';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: rgb(2, 46, 22);
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-  }
-  .footer-col-1 ul li a{
-    color: darkblue;
+    width: 100%;  /* Make sure it takes up the full width */
+}
+
+.footer-section {
+    flex: 1 1 300px;  /* Allows sections to resize flexibly */
+    margin-bottom: 20px;
+    min-width: 200px; /* Set a minimum width for each section */
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffd700;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
     text-decoration: none;
-  }
-  .footer-col-1 ul li a:hover{
-      color: black;
-      text-decoration: none;
-  }
-  /* footer  */
+    color: #ddd;
+    font-size: 16px;
+}
 
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
 
-  
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    width: 100%;  /* Ensure it spans across the entire footer */
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+    font-size: 14px;
+}

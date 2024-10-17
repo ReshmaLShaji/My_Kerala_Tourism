@@ -98,6 +98,74 @@ p {
   display: flex;
   justify-content: space-between;
 }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;  /* Make sure it takes up the full width */
+}
+
+.footer-section {
+    flex: 1 1 300px;  /* Allows sections to resize flexibly */
+    margin-bottom: 20px;
+    min-width: 200px; /* Set a minimum width for each section */
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffd700;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    width: 100%;  /* Ensure it spans across the entire footer */
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+    font-size: 14px;
+}
 
 </style> 
 </head>
@@ -201,56 +269,41 @@ p {
   </div>
 </div>
 
-
 <footer>
-<div class="footer-1">
-<div class="container-1">
-<div class="row-1">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="Tourism.html">Visit Kerala</a></li>
+        <li><a href="where.html">Where to Go</a></li>
+        <li><a href="events.html">Events & Festivals</a></li>
+        <li><a href="about.html">About Kerala</a></li>
+      </ul>
+    </div>
 
-<!-- Visit Kerala Column -->
-<div class="footer-col-1">
-  <h4>Explore</h4>
-  <ul>
-    <li><a href="Tourism.html">Visit Kerala</a></li>
-    <br>
-    <li><a href="where.html">Where to Go</a></li>
-    <br>
-    <li><a href="events.html">Events & Festivals</a></li>
-    <br>
-    <li><a href="about.html">About Kerala</a></li>
-  </ul>
-</div>
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a href="tel:+1234567890">Phone: +1234567890</a></li>
+        <li><a href="mailto:info@example.com">Email: reshma.l.shaji1@gmail.com</a></li>
+      </ul>
+    </div>
 
-<!-- Contact Us Column -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <ul class="social-links">
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
 
-<div class="footer-col-1">
-  <h4>Contact Us</h4>
-  <ul>
-    <li><a href="tel:+1234567890">Phone: +1234567890</a></li>
-    <li><a href="mailto:info@example.com">Email: reshma.l.shaji1@gmail.com</a></li>
-  </ul>
-</div>
-
-<!-- Follow Us Column -->
-<div class="footer-col-1">
-  <h4>Follow Us</h4>
-  <ul>
-    <li><a href="#" class="fa fa-facebook"> Facebook</a></li>
-    <li><a href="" class="fa fa-instagram"> Instagram</a></li>
-    <li><a href="#" class="fa fa-youtube"> YouTube</a></li>
-    <li><a href="#" class="fa fa-google"> LinkedIn</a></li>
-  </ul>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="footer-bottom">
+    <p>&copy; 2024 Kerala Tourism. All Rights Reserved.</p>
+  </div>
 </footer>
+
 
 </body>
 </html> 
